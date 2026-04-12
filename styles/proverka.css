@@ -1,0 +1,213 @@
+.main {
+    text-align: center;
+}
+.element {
+    display: inline-block;
+    width: 80%;
+    height: 80%;
+}
+h1 {
+    color: rgb(69, 188, 235);
+    background-color: rgba(0, 0, 0, 0.76);
+    padding: 10px;
+    border-radius: 10px;
+}
+.karta {
+    background-color: rgba(0, 0, 0, 0.76);
+    border-radius: 10px;
+    max-width: 100%;
+    transition: all 0.3s;
+    display: inline-block;
+    margin: 10px 10px 0;
+}
+.karta:hover {
+    box-shadow: 0 20px 40px aqua;
+    transform: translateY(-10px);
+}
+h2 {
+    font-size: 20px;
+    text-align: center;
+    height: 40px;
+    color: rgb(69, 188, 235);
+    background-color: rgba(37, 37, 37, 0.719);
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 35px;
+}
+.imga {
+    border-radius: 10px;
+    width: 500px;
+}
+.karti {
+    background-color: rgba(59, 59, 59, 0.719);
+    padding: 20px;
+    border-radius: 10px;
+}
+body {
+    background-color: #272727;
+    margin: 0;
+}
+button {
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(69, 188, 235);
+    border-radius: 10px;
+    border: 1px solid rgb(69, 188, 235);
+    font-size: 20px;
+    text-align: center;
+    transition: all 0.3s;
+    padding: 10px;
+    width: 94.5%;
+}
+button:hover {
+    box-shadow: 0 20px 40px cyan;
+    transform: translateY(-10px);
+    background-color: rgb(69, 188, 235);
+    color: white;
+}
+iframe {
+    height: 50%;
+    position: absolute;
+    width: 50%;
+    top: 11%;
+    right: 25%;
+}
+#close_btn {
+    position: absolute;
+}
+input {
+    background-color: rgba(0, 0, 0, 0.76);
+    color: rgb(69, 188, 235);
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s;
+    padding: 10px;
+    width: 90%;
+    border: 1px solid rgb(69, 188, 235);
+}
+input:hover {
+    transform: translateY(-10px);
+    box-shadow:  0 20px 40px cyan;
+    border: 1px solid rgb(69, 188, 235);
+    background-color: rgb(69, 188, 235);
+    color: white;
+    
+}
+input:hover::placeholder {
+    color: white;
+    opacity: 1;
+}
+input::placeholder {
+    color: rgb(69, 188, 235);
+    opacity: 1;
+}
+.pass {
+    background-color: rgba(59, 59, 59, 0.719);
+    display: inline-block;
+    padding: 15px;
+    border-radius: 10px;
+    width: 90%;
+}
+.proverka {
+    text-align: center;
+}
+.tepa {
+    background-color: rgba(59, 59, 59, 0.719);
+    display: inline-block;
+    padding: 10px;
+    border-radius: 10px;
+}
+.ble {
+    display: none;
+}
+#tepa_blen {
+    display: block !important; /* Показываем блок */
+    position: fixed;           /* Фиксируем на весь экран */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/Tépa_Bleee.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 9999;    
+}
+.message {
+    display: none;
+}
+#message_view {
+    display: inline-block;
+    position: absolute;
+    top: 90%;
+    background-color: rgba(0, 0, 0, 0.76);
+    border: 1px solid rgb(69, 188, 235);
+    padding: 10px;
+    border-radius: 10px;
+    height: 20px;
+    left: 92%;
+    color: rgb(69, 188, 235);
+    transition: all 0.3s;
+    animation: message_spawn 1s;
+}
+#message_view>h3 {
+    transform: translateY(-18px);
+}
+@keyframes message_spawn {
+    0% {
+        left: 100%;
+    }
+}
+#message_view:hover {
+    background-color: rgb(69, 188, 235);
+    color: white;
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px cyan;
+}
+header>nav>a {
+    text-decoration: none;
+    color: cyan;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid cyan;
+    margin: 10px;
+    display: inline-block;
+}
+* {
+    transition: all 0.3s;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    background-color: black;
+}
+header>nav>a:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px cyan;
+    background-color: cyan;
+    color: black;
+}
+header>nav>.logo>img {
+    width: 35px;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    float: right;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+.logo>h3 {
+    color: cyan;
+    margin-right: 10px;
+}
+.logo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px cyan;
+    background-color: cyan;
+}
+.logo:hover>h3 {
+    color: black;
+}

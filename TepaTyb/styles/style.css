@@ -1,0 +1,26 @@
+.video>iframe {
+    width: 90% !important;
+    max-width: 320px;
+    height: auto;
+    display: block;
+    aspect-ratio: 16/9;
+    border: none;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.video {
+    margin: 10px;
+    background-color: black;
+    border-radius: 10px;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 95%;
+    max-width: 400px;
+    min-width: 280px;
+    margin: 10px auto;
+}
