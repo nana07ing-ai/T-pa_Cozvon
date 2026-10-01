@@ -149,3 +149,22 @@ header>nav>.logo>img {
     border: 1px solid cyan;
     box-shadow: 0 0 40px cyan;
 }
+#admin_panel_tepa {
+    background-color: #272727;
+    border-radius: 10px;
+    animation: admin_panel_tepka 3s ease;
+}
+#admin_panel_tepa::backdrop {
+    backdrop-filter: blur(5px);
+}
+@keyframes admin_panel_tepka {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+#secret_btn {
+    background-color: yellow;
+}
