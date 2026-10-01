@@ -6,6 +6,7 @@
     <title>Тёпа Созвон</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./images/Tépa.ico" type="image/x-icon">
+    <link rel="manifest" href="./manifest.json">
 </head>
 <body>
     <header>
@@ -20,6 +21,14 @@
             </div>
         </nav>
     </header>
+    <dialog id="admin_panel_tepa">
+        <h1>Админ Панель Тёпы</h1>
+        <div class="main_admin">
+            <div class="element_admin">
+                <button id="secret_btn">Секретная Страница</button>
+            </div>
+        </div>
+    </dialog>
     <div class="main">
         <div class="element">
             <h1>Тёпа Созвон</h1>
@@ -83,5 +92,6 @@
     </div>
     <script src="./scripts/security_true.js"></script>
     <script src="./scripts/sound.js"></script>
+    <script src="./scripts/admin_panel_tepa.js"></script>
 </body>
 </html>
